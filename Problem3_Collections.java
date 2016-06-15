@@ -14,7 +14,7 @@ public class Problem3_Collections {
 		set.add(map.keySet());
 		
 		List list = new ArrayList();
-		list.add(Collections.getList(set));
+		list.addAll(set);
 		
 		list = Arrays.asList(Arrays.sort(list.toArray()));
 		
