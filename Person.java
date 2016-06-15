@@ -33,4 +33,13 @@ public class Person {
         		&& ( ((state!=null) && state.equals(p.state)) || (state==null&&p.state==null) )
         		&& zip = p.zip;
         }
+        
+        public int hashCode() {
+       		int S1= (name!=null)?name.length:0;
+       		int S2= (address!=null)?address.length:0;
+       		int S3= (city!=null)?city.length:0;
+       		int S4= (state!=null)?state.length:0;
+           return ( s1>>s2 + s3>>s4 + age*13 + zip*17); 	
+        
+        }
 }
